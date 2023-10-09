@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  server:
+    image: hirurglybitel/simple-server:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: server
+      args:
+        - PM2_PUBLIC_KEY=${PM2_PUBLIC_KEY}
+        - PM2_SECRET_KEY=${PM2_SECRET_KEY}
+    container_name: simple_server
+    ports:
+      - "${PORT}:${PORT}"
+    env_file:
+      - ./.env

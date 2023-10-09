@@ -1,0 +1,16 @@
+node_modules
+dist
+
+.git
+.github
+.gitattributes
+.gitignore
+.vscode
+.editorconfig
+
+.env
+README.md
+
+.prettierignore
+.prettierrc
+.eslintrc.json

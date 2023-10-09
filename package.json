@@ -4,15 +4,17 @@
   "scripts": {
     "build": "node build.js",
     "start": "node dist/main.js",
-    "launch": "yarn build && yarn start"
+    "launch": "yarn build && yarn start",
+    "pm2:start": "pm2 start pm2.config",
+    "pm2:stop": "pm2 start simple-server"
   },
   "devDependencies": {
     "@types/express": "^4",
-    "@types/node": "^20.8.3",
-    "esbuild": "^0.19.4"
+    "@types/node": "^20.8.3"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
+    "esbuild": "^0.19.4",
     "express": "^4.18.2",
     "pm2": "^5.3.0"
   }
