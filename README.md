@@ -2,7 +2,6 @@
 
 This example illustrates how to set up automatic build and deployment of a docker image on your remote server by [GitHub Acions]([url](https://docs.github.com/en/actions)).
 
-
 View the result on the [demo server](http://213.184.249.125:60103).
 
 There're three main points here:
