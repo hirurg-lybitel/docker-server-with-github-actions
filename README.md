@@ -48,6 +48,7 @@ docker compose up
 
 ## Remote machine
 *change path _workspace/Yuri/test_ in [docker-deploy.yml](https://github.com/hirurg-lybitel/docker-server-with-github-actions/blob/main/.github/workflows/docker-deploy.yml) to your path.
+
 In addition to setting up ssh and port forwarding, several files are needed here:
 - .env
 - docker-compose.run.yml
