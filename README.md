@@ -1,6 +1,6 @@
 # Deploy server with github actions
 
-This example illustrates how to set up automatic build and deployment of a docker image on your remote server by [GitHub Acions]([url](https://docs.github.com/en/actions))
+This example illustrates how to set up automatic build and deployment of a docker image on your remote server by [GitHub Acions]([url](https://docs.github.com/en/actions)).
 
 There're three main points here:
 
@@ -46,7 +46,7 @@ docker compose up
 5. deploy the built image on it
 
 
-## Remote machine
+## Remote machine*
 *change path _workspace/Yuri/test_ in [docker-deploy.yml](https://github.com/hirurg-lybitel/docker-server-with-github-actions/blob/main/.github/workflows/docker-deploy.yml) to your path.
 
 In addition to setting up ssh and port forwarding, several files are needed here:
