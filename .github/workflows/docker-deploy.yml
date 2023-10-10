@@ -3,9 +3,10 @@ run-name: ${{ github.actor }} triggered Docker deploying 🐳
 
 on:
   push:
-    branches: ['main']
+    branches:
+      - main
     paths-ignore:
-      - '**.md'  
+      - '**/**.md'
 
 env:
   REGISTRY: ghcr.io
