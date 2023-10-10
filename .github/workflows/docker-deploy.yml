@@ -53,8 +53,8 @@ jobs:
 
       - name: Install SSH client
         run: |
-          apt-get update
-          apt-get install -y openssh-client
+          sudo apt-get update
+          sudo apt-get install -y openssh-client
 
       - name: SSH to Remote Server and Execute Command
         uses: appleboy/ssh-action@master
