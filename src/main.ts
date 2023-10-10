@@ -18,6 +18,6 @@ app.get('*', (req, res) => {
   });
 
   res.status(200).json({
-    message: `There's api`
+    message: `There's server api`
   })
 })
