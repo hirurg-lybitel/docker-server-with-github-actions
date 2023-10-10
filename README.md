@@ -28,8 +28,8 @@ docker compose up
 ## GitHub Actions
 
 **Here you need to set several mandatory secrets for your repository (_Settings -> Secrets and variables -> Actions_):**
-- **DOCKER_*** - your Docker Hub credentials
-- **DEPLOY_*** - SSH data for connection to your remote machine
+- **DOCKER_*** - your Docker Hub credentials;
+- **DEPLOY_*** - SSH data for connection to your remote machine.
 
 ![image](https://github.com/hirurg-lybitel/docker-server-with-github-actions/assets/11502258/8570afe8-0d7e-4c4f-9363-f0d87a3b9bec)
 
@@ -41,13 +41,13 @@ docker compose up
 **Two tasks will appear here which will:**
 1. check your code
 2. build a docker image
-3. upload it to GitHub Container Registry (GitHub alternative to Docker )
+3. upload it to GitHub Container Registry (GitHub alternative to Docker)
 4. connect to your remote server
 5. deploy the built image on it
 
 
 ## Remote machine
-*change path workspace/Yuri/test in [docker-deploy.yml](https://github.com/hirurg-lybitel/docker-server-with-github-actions/blob/main/.github/workflows/docker-deploy.yml) to your path
+*change path _workspace/Yuri/test_ in [docker-deploy.yml](https://github.com/hirurg-lybitel/docker-server-with-github-actions/blob/main/.github/workflows/docker-deploy.yml) to your path.
 In addition to setting up ssh and port forwarding, several files are needed here:
 - .env
 - docker-compose.run.yml
@@ -90,6 +90,7 @@ Bash script for calling docker compose:
 docker compose -f docker-compose.run.yml --env-file .env up -d
 ```
 
-## PM2 monitor
-After launching project locally by [pm2](#node-app) or deploying it on remote server you will able to monitor your server in PM2 dashboard:
+## PM2 monitoring
+After launching project locally [by pm2](#node-app) or deploying it on remote server you will able to monitor your server in [PM2 dashboard](https://id.keymetrics.io/api/oauth/register):
+
 ![image](https://github.com/hirurg-lybitel/docker-server-with-github-actions/assets/11502258/090356ff-f230-4b3a-920c-cbb3822a9b94)
