@@ -66,6 +66,7 @@ jobs:
             script: |
               cd workspace/Yuri/test
               docker pull ghcr.io/hirurg-lybitel/docker-server-with-github-actions:main
+              sh run_container.sh
               exit  
 
       # run: |
