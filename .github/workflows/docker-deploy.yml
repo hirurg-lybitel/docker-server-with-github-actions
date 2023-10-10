@@ -67,18 +67,4 @@ jobs:
               cd workspace/Yuri/test
               docker pull ghcr.io/hirurg-lybitel/docker-server-with-github-actions:main
               sh run_container.sh
-              exit  
-
-      # run: |
-      #   sshpass -p ${{ secrets.DEPLOY_PASSWORD }}
-      #   ssh ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }} -p ${{ secrets.DEPLOY_PORT }}
-      #   crm && "echo 'Hello, remote server!'"
-
-
-      #   run: |
-      #       install -m 600 -D /dev/null ~/.ssh/id_rsa
-      #       echo "${{ secrets.DEPLOY_PASSWORD }}" > ~/.ssh/id_rsa
-      #       ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} > ~/.ssh/known_hosts
-      # - name: Connect and pull
-      #   run: ssh ${{ secrets.DEPLOY_USERNAME }}@${{ secrets.DEPLOY_HOST }} 
-      #        "crm && docker pull ghcr.io/hirurg-lybitel/docker-server-with-github-actions:main && exit"            
+              exit

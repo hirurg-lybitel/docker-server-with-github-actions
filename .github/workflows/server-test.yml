@@ -1,5 +1,5 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} triggered GitHub Actions 🚀
+name: Test after deploying
+run-name: ${{ github.actor }} triggered test
 
 on:
   workflow_run:
@@ -7,7 +7,7 @@ on:
     types:
       - completed
 jobs:
-  Explore-GitHub-Actions:
+  Run-test:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
