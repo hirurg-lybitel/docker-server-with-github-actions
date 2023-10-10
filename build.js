@@ -1,6 +1,5 @@
 const { build } = require("esbuild");
 
-
 const { dependencies = {}, peerDependencies = {} } = require('./package.json')
 
 const sharedConfig = {
